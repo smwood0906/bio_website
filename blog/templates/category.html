@@ -1,0 +1,13 @@
+
+{% extends 'base.html' %}
+{% load thumbnail %}
+{% block content %}
+{%  for p in post %}
+    <a href="/blog/{{ p.category.slug }}/{{ p.slug }}">{{ p.title }}</a><br>
+    {{ p.author }} on {{ date_created }}<br>
+    {% thumbnail p.img 200x200 upscale as thumb %}
+    <img src="{{ thumb.url }}" width="{{ thumb.width }}" height="{{ thumb.height }}" />
+
+    {%  endfor %}
+
+{% endblock %}

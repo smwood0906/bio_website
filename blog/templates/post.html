@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview">
+                    <a href="post.html">
+                        <h2 class="post-title">
+                            {{ post.title }}
+                        </h2>
+                        <h3 class="post-subtitle">
+                            {{ post.content }}
+                        </h3>
+                    </a>
+                    <img class=" 'img-responsive" src="/media/{{ post.img }}"></img>
+                    <p class="post-meta">Posted by <a href="#">{{ post.author }}</a> {{ post.date_created }}</p>
+                </div>
+                <hr>
+            </div>
+        </div>
+{% endblock %}
