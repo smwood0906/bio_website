@@ -14,7 +14,7 @@ class LoginRequiredMixin(object):
 
 
 def blog_list(request):
-    p = Post.objects.all().order_by('-id')
+    p = Post.objects.all().order_by('-published_date')
     print(p)
     context_dict = {'post': p}
     return render(request, 'blog_list.html', context_dict)
@@ -57,3 +57,11 @@ class DeletePost(DeleteView):
     model = Post
     success_url = '/blog/'
     template_name = 'confirm_delete.html'
+
+def contact_page(request):
+    return render(request, 'contact_page.html')
+
+def about_me(request):
+    return render(request, 'about.html')
+
+# def portfolio(request):

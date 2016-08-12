@@ -362,7 +362,8 @@
                         {% thumbnail posts.img 200x200 upscale as thumb %}
                 <img src="{{ thumb.url }}" width="{{ thumb.width }}" height="{{ thumb.height }}" />
 
-                        <p class="post-meta">Posted by <a href="#">{{ posts.author }}</a> {{ posts.date_created }}</p>
+                        <p class="post-meta">Posted by <a href="#">{{ posts.author }}<br>
+                            {{ posts.published_date }}</p>
                     </div>
                     <hr>
 {% endfor %}

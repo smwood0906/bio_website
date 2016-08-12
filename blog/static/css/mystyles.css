@@ -6,35 +6,41 @@
     z-index: 2;
     top: 0;
     left: 0;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,efb31b+91&0+36,0.95+91 */
-    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(249, 225, 165, 0) 36%, rgba(239, 179, 27, 0.95) 91%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(249, 225, 165, 0) 36%, rgba(239, 179, 27, 0.95) 91%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(249, 225, 165, 0) 36%, rgba(239, 179, 27, 0.95) 91%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#f2efb31b', GradientType=1);}
 
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+44,1a9f85+52,1a9f85+52,1a9f85+64,1a9f85+76&0+48,1+76 */
+background: -moz-linear-gradient(left,  rgba(255,255,255,0) 44%, rgba(141,207,194,0) 48%, rgba(26,159,133,0.14) 52%, rgba(26,159,133,0.57) 64%, rgba(26,159,133,1) 76%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 44%,rgba(141,207,194,0) 48%,rgba(26,159,133,0.14) 52%,rgba(26,159,133,0.57) 64%,rgba(26,159,133,1) 76%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(255,255,255,0) 44%,rgba(141,207,194,0) 48%,rgba(26,159,133,0.14) 52%,rgba(26,159,133,0.57) 64%,rgba(26,159,133,1) 76%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#1a9f85',GradientType=1 ); /* IE6-9 */
 /* IE6-9 */
+ }/* IE6-9 */
+
 
 .heroText {
+    font-family: 'Playfair Display SC', serif ;
     position: absolute;
     z-index: 3;
     top: 0px;
-    left: 700px;
+    left: 800px;
     right: 0px;
 }
 
 .caption {
+    font-family: 'Spinnaker', sans-serif;
     border-bottom: 1px solid #7a7a7a;
     border-top: 1px solid #7a7a7a;
-    padding: 15px 0;
+    border-bottom-color: #F92E29;
+    border-top-color: #F92E29; padding: 15px 0;
     letter-spacing: 1px;
     text-transform: uppercase;
     font-size: 16px;
-    color: #ffffff;
-    margin-left: 12px;
+    color: #F9A329;
+    margin-left: 0px;
 }
 
 .blackText {
     color: #000000 !important;
+    font-family: 'Playfair Display SC', serif ;
 }
 
 .row{

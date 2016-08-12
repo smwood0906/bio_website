@@ -22,11 +22,16 @@ class Category(models.Model):
 class Post(models.Model):
     content = models.TextField()
     date_created = models.DateTimeField(auto_now=True)
+    published_date = models.DateField(blank=True, null=True)
     title = models.CharField(max_length=300)
     author = models.ForeignKey(User)
     slug = models.SlugField(unique=True)
     category = models.ForeignKey(Category)
     img = models.ImageField(upload_to=post_upload_handler)
+
+    def publish(self):
+        self.published_date = timezone.now()
+        self.save()
 
     def __str__(self):
         return self.title
