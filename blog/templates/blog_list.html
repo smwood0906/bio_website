@@ -346,7 +346,7 @@
 
 <!--/.page-section-->
 {% block content %}
-{<div class="container">
+<div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 {% for posts in post %}
@@ -362,10 +362,12 @@
                         {% thumbnail posts.img 200x200 upscale as thumb %}
                 <img src="{{ thumb.url }}" width="{{ thumb.width }}" height="{{ thumb.height }}" />
 
-                        <p class="post-meta">Posted by <a href="#">{{ posts.author }}<br>
+                        <p class="post-meta">Posted by <a href="#">{{ posts.author }}</a><br>
                             {{ posts.published_date }}</p>
                     </div>
                     <hr>
 {% endfor %}
-
+            </div>
+</div>
+</div>
 {% endblock %}

@@ -20,10 +20,10 @@ from django.contrib import admin
 
 
 urlpatterns = [
-                  # url(r'^admin/', admin.site.urls),
-                  # url('^accounts/', include('django.contrib.auth.urls')),
-                  # url('^blog/', include('blog.urls')),
-                  url('^s/', include('sitepages.urls')),
+                  url(r'^admin/', admin.site.urls),
+                  url('^accounts/', include('django.contrib.auth.urls')),
+                  url('^blog/', include('blog.urls')),
+                  url('^', include('sitepages.urls')),
 
               ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL,
                                                                                            document_root=settings.MEDIA_ROOT)
