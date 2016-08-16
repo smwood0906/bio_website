@@ -19,9 +19,6 @@ def blog_list(request):
     context_dict = {'post': p}
     return render(request, 'blog_list.html', context_dict)
 
-def home(request):
-    return render(request, 'home.html', {})
-
 
 def blog(request, slug, cat):
     post = Post.objects.get(slug=slug)
@@ -58,10 +55,6 @@ class DeletePost(DeleteView):
     success_url = '/blog/'
     template_name = 'confirm_delete.html'
 
-def contact_page(request):
-    return render(request, 'contact_page.html')
 
-def about_me(request):
-    return render(request, 'about.html')
 
 # def portfolio(request):
