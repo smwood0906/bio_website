@@ -1,9 +1,9 @@
 branch-defaults:
   master:
-    environment: bio-site
+    environment: null
     group_suffix: null
 global:
-  application_name: bio_site
+  application_name: bio
   default_ec2_keyname: sarah
   default_platform: Python 3.4
   default_region: us-west-2
