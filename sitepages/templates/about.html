@@ -1,4 +1,28 @@
 {%extends 'base.html'%}
+{% load staticfiles %}
 {% block content %}
-    <span> Under construction</span>
+    <<section id="aboutUs">
+  <div class="container">
+    <div class="row">
+      <!-- item -->
+      <div class="col-md-4 tileBox"> <img class= "about_img" src = "{% static 'images/ElwaySarah.jpg' %}"/> </div>
+      <div class="col-md-8 tileBox">
+        <div class="txtHead">
+          <h2 class="font_fix">I am Sarah Wood,</h2>
+          <h3> a FullStack Web Developer based in Oregon. </h3>
+        </div>
+        <p> I recently transplanted myself to the Pacific Northwest after making Alaska my home for nearly 10 years. The move brought about many
+            changes for me, the most exciting being my discovery of coding! After a few weeks of self-teaching with online resources, I knew coding
+            was the "one for me" and decided to take steps to change careers after 10 years of working in education and non-profits. <br/>
+          <br/>
+          Never one to do something halfway, I dove in and committed to PDX Code Guild's 16 week Fullstack Developer Bootcamp while still working at my fulltime job.
+        After 4 months of driving 90 minutes each way after work to attend class, I am eager to pair my new technical skills with my seasoned professional
+        skills and begin my journey as a developer.<br>
+        <br>
+        Oh, and I love dogs, being outside, and climbing mountains. (Most proud of summiting Kilimanjaro!)</p>
+      </div>
+      <!-- end: -->
+    </div>
+  </div>
+</section>
 {% endblock %}

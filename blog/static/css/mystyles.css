@@ -1,3 +1,6 @@
+body {
+    font-family: 'Spinnaker', sans-serif;
+}
 .banner-container:after {
     content: ' ';
     width: 100%;
@@ -48,4 +51,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 }
 .navbar-inverse .navbar-nav > li > a {
     color: black;
+    font-family: 'Spinnaker', sans-serif;
 }
+
+.font_fix{
+    font-family: 'Playfair Display SC', serif;
+}
+
+.combo{
+    color:darkred;
+}
+
+.about_img{
+    width: 100%;
+}
+
+

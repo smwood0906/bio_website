@@ -133,3 +133,10 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.webfaction.com'
+EMAIL_HOST_USER = 'smwood'
+EMAIL_HOST_PASSWORD = 'ElwayOle16'
+DEFAULT_FROM_EMAIL = 'smwood@sarahmwood.com'
+SERVER_EMAIL = 'smwood@sarahmwood.com'
