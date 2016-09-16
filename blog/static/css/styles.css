@@ -265,9 +265,9 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 .page-section h1 span {
 	font-weight: 200;
 }
-.page-section h2 {
-	color: #FF7A00;
-}
+/*.page-section h2 {*/
+	/*color: #FF7A00;*/
+/*}*/
 .page-section p {
 	font-size: 1.1em;
 	line-height: 1.6em;
@@ -783,11 +783,13 @@ body {
 	display: inline;
 	margin-right: 6px;
 }
-footer {
-	border-top: 1px solid #e5e5e5;
-	padding: 45px 0;
-	background: #fff;
-}
+
+/*Do not display footer styles*/
+/*footer {*/
+	/*border-top: 1px solid #e5e5e5;*/
+	/*padding: 45px 0;*/
+	/*background: #fff;*/
+/*}*/
 .social a:hover {
 	color: #FF7A00;
 }
@@ -945,6 +947,7 @@ margin-top: 30%;
 }
 .page-section h2 {
 	font-size: 2em;
+	color: black !important;
 }
 .page-section p {
 	font-size: 1em;

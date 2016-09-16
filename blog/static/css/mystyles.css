@@ -1,6 +1,19 @@
 body {
     font-family: 'Spinnaker', sans-serif;
 }
+
+h1, h3 {
+    font-family: 'Josefin Slab', serif;
+}
+
+h2 {
+    font-family: 'Spinnaker', sans-serif;
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
 .banner-container:after {
     content: ' ';
     width: 100%;
@@ -10,17 +23,18 @@ body {
     top: 0;
     left: 0;
 
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+44,1a9f85+52,1a9f85+52,1a9f85+64,1a9f85+76&0+48,1+76 */
-background: -moz-linear-gradient(left,  rgba(255,255,255,0) 44%, rgba(141,207,194,0) 48%, rgba(26,159,133,0.14) 52%, rgba(26,159,133,0.57) 64%, rgba(26,159,133,1) 76%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 44%,rgba(141,207,194,0) 48%,rgba(26,159,133,0.14) 52%,rgba(26,159,133,0.57) 64%,rgba(26,159,133,1) 76%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right,  rgba(255,255,255,0) 44%,rgba(141,207,194,0) 48%,rgba(26,159,133,0.14) 52%,rgba(26,159,133,0.57) 64%,rgba(26,159,133,1) 76%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#1a9f85',GradientType=1 ); /* IE6-9 */
-/* IE6-9 */
- }/* IE6-9 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+44,1a9f85+52,1a9f85+52,1a9f85+64,1a9f85+76&0+48,1+76 */
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 44%, rgba(141, 207, 194, 0) 48%, rgba(26, 159, 133, 0.14) 52%, rgba(26, 159, 133, 0.57) 64%, rgba(26, 159, 133, 1) 76%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 44%, rgba(141, 207, 194, 0) 48%, rgba(26, 159, 133, 0.14) 52%, rgba(26, 159, 133, 0.57) 64%, rgba(26, 159, 133, 1) 76%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 44%, rgba(141, 207, 194, 0) 48%, rgba(26, 159, 133, 0.14) 52%, rgba(26, 159, 133, 0.57) 64%, rgba(26, 159, 133, 1) 76%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#1a9f85', GradientType=1); /* IE6-9 */
+    /* IE6-9 */
+}
 
+/* IE6-9 */
 
 .heroText {
-    font-family: 'Playfair Display SC', serif ;
+    font-family: 'Playfair Display SC', serif;
     position: absolute;
     z-index: 3;
     top: 0px;
@@ -33,7 +47,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     border-bottom: 1px solid #7a7a7a;
     border-top: 1px solid #7a7a7a;
     border-bottom-color: #F92E29;
-    border-top-color: #F92E29; padding: 15px 0;
+    border-top-color: #F92E29;
+    padding: 15px 0;
     letter-spacing: 1px;
     text-transform: uppercase;
     font-size: 16px;
@@ -43,27 +58,47 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 
 .blackText {
     color: #000000 !important;
-    font-family: 'Playfair Display SC', serif ;
+    font-family: 'Josefin Slab', serif;
 }
 
-.row{
+.row {
     margin-top: 100px;
 }
+
 .navbar-inverse .navbar-nav > li > a {
     color: black;
     font-family: 'Spinnaker', sans-serif;
 }
 
-.font_fix{
-    font-family: 'Playfair Display SC', serif;
+.scroll-link:hover {
+    color: orange !important;
+    transition: .5s;
 }
 
-.combo{
-    color:darkred;
+.font_fix {
+    font-family: 'Josefin Slab', serif;
 }
 
-.about_img{
+.combo {
+    color: darkred;
+}
+
+.about_img {
     width: 100%;
 }
 
+#portfolio {
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 44%, rgba(141, 207, 194, 0) 48%, rgba(26, 159, 133, 0.14) 52%, rgba(26, 159, 133, 0.57) 64%, rgba(26, 159, 133, 1) 76%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 44%, rgba(141, 207, 194, 0) 48%, rgba(26, 159, 133, 0.14) 52%, rgba(26, 159, 133, 0.57) 64%, rgba(26, 159, 133, 1) 76%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 44%, rgba(141, 207, 194, 0) 48%, rgba(26, 159, 133, 0.14) 52%, rgba(26, 159, 133, 0.57) 64%, rgba(26, 159, 133, 1) 76%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#1a9f85', GradientType=1) !important;
+}
+
+.topHome{
+    background-color: transparent;
+}
+
+/*.copyright{*/
+/*display: none;*/
+/*}*/
 

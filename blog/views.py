@@ -57,4 +57,3 @@ class DeletePost(DeleteView):
 
 
 
-# def portfolio(request):
