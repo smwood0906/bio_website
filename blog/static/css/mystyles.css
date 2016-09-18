@@ -94,9 +94,15 @@ h2 {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#1a9f85', GradientType=1) !important;
 }
 
-.topHome{
+.topHome {
     background-color: transparent;
 }
+
+@media (max-width: 480px){
+.header #mainNav {
+    background: whitesmoke !important;
+    padding: 0px 15px;
+}}
 
 /*.copyright{*/
 /*display: none;*/
