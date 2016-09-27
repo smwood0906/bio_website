@@ -55,3 +55,6 @@ def portfolio(request):
 
 def skills(request):
     return render(request, 'skills.html')
+
+def article(request):
+    return render(request, 'base-search.html')
