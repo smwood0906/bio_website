@@ -61,15 +61,16 @@ $("#forward").click(function () {
 });
 
 $("#back").click(function () {
+    event.preventDefault();
     currentPage -= 1;
     loadPage(currentPage, q, fq)
 });
 
 //create a click event that allows users to enter a new keyword and return new search results//
 $("#sub").click(function () {
-    term = $("#search-key").val();
-    q = term;
-    fq = term;
+    event.preventDefault();
+    q = $("#search-key").val();
+    fq = $("#search-key").val();
     loadPage(currentPage, q, fq)
 });
 
